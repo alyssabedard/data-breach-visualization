@@ -1,0 +1,2 @@
+class Databreach < ApplicationRecord
+end

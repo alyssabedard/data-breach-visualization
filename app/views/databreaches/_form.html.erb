@@ -1,0 +1,17 @@
+<%= form_with(model: databreach) do |form| %>
+  <% if databreach.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(databreach.errors.count, "error") %> prohibited this databreach from being saved:</h2>
+
+      <ul>
+        <% databreach.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

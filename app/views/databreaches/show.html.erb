@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @databreach %>
+
+<div>
+  <%= link_to "Edit this databreach", edit_databreach_path(@databreach) %> |
+  <%= link_to "Back to databreaches", databreaches_path %>
+
+  <%= button_to "Destroy this databreach", @databreach, method: :delete %>
+</div>
