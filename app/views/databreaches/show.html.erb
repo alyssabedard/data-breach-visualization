@@ -1,8 +1,22 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: #0d8000"><%= notice %></p>
 
 <%= render @databreach %>
-
 <div>
+  <h2><%= @databreach.organisation %></h2>
+  <%#= @databreach.all_attributes %>
+  TESTING:
+   <%=  @databreach.records_lost %>
+  <%#=  @databreach.date %>
+
+
+  <ul>
+    <% @databreach.all_attributes.each do |key, value| %>
+      <li>
+        <strong><%= key.humanize %>:</strong> <%= value %>
+      </li>
+    <% end %>
+  </ul>
+
   <%= link_to "Edit this databreach", edit_databreach_path(@databreach) %> |
   <%= link_to "Back to databreaches", databreaches_path %>
 

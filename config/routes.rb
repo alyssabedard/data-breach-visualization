@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :databreaches
+  resources :databreaches # CRUD routes
   #get 'home/index'
   root 'home#index'
   get 'home/about'

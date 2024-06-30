@@ -1,14 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Databreaches</h1>
-
+<h1>Data breaches</h1>
+<%= link_to "Add a data breach here", new_databreach_path %>
+<hr></hr>
+<h3>All data breaches</h3>
 <div id="databreaches">
   <% @databreaches.each do |databreach| %>
     <%= render databreach %>
     <p>
-      <%= link_to "Show this databreach", databreach %>
+      <%= link_to "#{databreach.organisation}", databreach %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New databreach", new_databreach_path %>
+
