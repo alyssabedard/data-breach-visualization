@@ -47,6 +47,7 @@
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.3.0, chruby: ruby-3.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.5.13, chruby: ruby-3.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.40.0, chruby: ruby-3.3.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="chartkick (v1.5.2, chruby: ruby-3.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.3.3, chruby: ruby-3.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.4.1, chruby: ruby-3.3.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, chruby: ruby-3.3.3) [gem]" level="application" />

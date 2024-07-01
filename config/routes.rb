@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'queries/search'
+  get 'databreaches/find/:organisation', to: 'databreaches#find_organisation'
+  # get 'new_method', to: 'databreaches#new_method'
+  get 'another_method', to: 'databreaches#another_method'
   resources :databreaches # CRUD routes
+
   #get 'home/index'
   root 'home#index'
   get 'home/about'

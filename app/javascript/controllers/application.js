@@ -1,5 +1,6 @@
 import { Application } from "@hotwired/stimulus"
-
+// import "./find_organisation.js"
+// import "find_organisation"
 const application = Application.start()
 
 // Configure Stimulus development experience

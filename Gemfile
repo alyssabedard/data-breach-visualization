@@ -42,7 +42,9 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
 gem 'csv', '~> 3.0'
-
+# gem 'daru-view', '~> 0.1.0'
+# gem 'jquery-rails', '~> 4.4'
+gem 'chartkick', '~> 1.4', '>= 1.4.1'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

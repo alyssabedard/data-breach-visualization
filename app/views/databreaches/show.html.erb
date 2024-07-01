@@ -2,17 +2,25 @@
 
 <%= render @databreach %>
 <div>
-  <h2><%= @databreach.organisation %></h2>
+  <h2>SHOW.HTML- <%= @databreach.organisation %></h2>
+  FORMAT <%= format_date(@databreach.date) %>
+
+
   <%#= @databreach.all_attributes %>
-  TESTING:
-   <%=  @databreach.records_lost %>
+<!--  TESTING:-->
+   <%#=  @databreach.records_lost %>
   <%#=  @databreach.date %>
 
 
   <ul>
     <% @databreach.all_attributes.each do |key, value| %>
       <li>
-        <strong><%= key.humanize %>:</strong> <%= value %>
+        <% if key == "date" %>
+          <strong><%= key.humanize %>:</strong> <%= value.strftime('%B %Y') %>
+        <% else %>
+          <strong><%= key.humanize %>:</strong> <%= value %>
+        <% end %>
+<!--        <strong><%#= key.humanize %>:</strong> <%#= value %>-->
       </li>
     <% end %>
   </ul>

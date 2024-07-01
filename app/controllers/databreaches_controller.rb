@@ -1,6 +1,19 @@
 class DatabreachesController < ApplicationController
   before_action :set_databreach, only: %i[ show edit update destroy ]
 
+  def find_organisation
+    # @message = "Hello world"
+    organisation = params[:organisation]
+    results = Databreach.find_by_organisation(organisation)
+    # render json: results.to_json
+    @results = results.to_json
+  end
+
+  def another_method
+    json_response = { message: "Hello from another_method" }
+    @databreach= json_response[:message]
+  end
+
   # GET /databreaches or /databreaches.json
   def index
     @databreaches = Databreach.all
@@ -67,4 +80,11 @@ class DatabreachesController < ApplicationController
     def databreach_params
       params.fetch(:databreach, {})
     end
+
+  def get_organisation(organisation)
+    results = Databreach.find_by(organisation)
+    render json: results.to_json
+  end
+
+
 end
