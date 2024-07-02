@@ -15,11 +15,16 @@
 <!--          <a class="nav-link" href="#">Link</a>-->
 <!--        </li>-->
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+<!--      <form class="d-flex" role="search">-->
+<!--        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
 <!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
-        <%= button_tag "Search", class:"btn btn-outline-success", type:"submit" %>
-      </form>
+<!--      </form>-->
+      <%#= form_tag databreaches_find_path(:organisation), method: "get", class:"d-flex", role:"search" do %>
+        <%#= text_field_tag :organisation, params[:organisation], placeholder: "Enter organisation name", class:"form-control me-2", type:"search" %>
+        <%#= submit_tag "Search", class:"btn btn-outline-success" %>
+      <%# end %>
     </div>
   </div>
 </nav>
+
+<%#= button_tag "Search", class:"btn btn-outline-success", type:"submit" %>

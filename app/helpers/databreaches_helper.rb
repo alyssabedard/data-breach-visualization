@@ -2,6 +2,11 @@ module DatabreachesHelper
   def format_date(date)
     date.strftime('%B %Y') if date.respond_to? :strftime
   end
+
+  def num_to_human(num)
+    number_to_human(num, units: {thousand: "K", million: "M", billion: "B", trillion: "T"})
+  end
+
   def format_records_lost(records_lost)
     number_with_delimiter(records_lost)
   end

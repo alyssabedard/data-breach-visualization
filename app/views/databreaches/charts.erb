@@ -1,0 +1,22 @@
+<H1> Charts</H1>
+<%= @message %>
+<%#= @br %>
+
+
+<H2>Sector</H2>
+<%= pie_chart Databreach.group(:sector).count %>
+<H2>Method</H2>
+<%= pie_chart Databreach.group(:method).count %>
+
+<h2>Data Sensitivity</h2>
+<h2>Record lost</h2>
+<h2>Data breaches per year</h2>
+
+<%= bar_chart Databreach.group_by_year %>
+<h2>Search</h2>
+
+
+
+
+
+<h1>Header</h1>
